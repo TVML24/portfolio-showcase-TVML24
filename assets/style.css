@@ -8,20 +8,11 @@
 * {
     margin: 0;
     padding: 0;
+    background: var(--backgroundgreen);
 }
-
-.float-left {
-    float:left;
-}
-
-.float-right {
-    float: right;
-}
-
-
 header{
     background: var(--headercolor);
-    padding-bottom: 4%;
+    padding-bottom: 5%;
     position:sticky;
 }
 
@@ -36,6 +27,8 @@ nav ul {
     margin-top: 2%;
     margin-right: 15%;
     width: 55%;
+    word-wrap: break-word;
+    background: var(--headercolor);
 }
 
 nav li {
@@ -50,63 +43,204 @@ header h1 {
     margin-left: 1%;
     float: left;
     color: var(--textred);
+    font-family: 'Montserrat Subrayada', sans-serif;
+    background-image: linear-gradient(90deg, #CAC890, #C5DCA5);
+    transition: all 0.5s ease-in-out;
 }
 
+header h1:hover {
+    box-shadow: inset 0px 0px 30px greenyellow;
+    box-shadow: 0px 0px 30px rgb(0, 128, 21);
+}
+
+/*This changes the background colour of the page*/
 main {
     position: relative;
     background: var(--backgroundgreen);
     display: flex;
+    flex-wrap: wrap;
+    height: 1783px;
 }
-
+/*This effects the forest image (or hero) at the top of the page*/
 #hero-div {
     position: relative;
     height: 580px;
     width: 100%;
     background-image: url("./images/trees-hero.jpg")
 }
-
 aside {
     position: relative;
     width:100%;
-    height:1000px;
-    background:yellow;
+    height:100%;
+    background:var(--backgroundgreen);
     display: flex;
+    box-shadow: -5px 0px 5px green inset;
 }
-
 aside ul {
+    display: flex;
     list-style: none;
-    padding-bottom: 25%;
     width:100%;
+    height: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 65px;
+    text-align: center;
+    text-decoration: underline;
+    color: #5F1A0F;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
-
 aside li {
+    position: relative;
     width:100%;
 }
 
-#left-col {
-    width:25%;
+aside li:nth-child(1) {
+    position: relative;
+    padding-top: 35%;
 }
 
+aside li:nth-child(2) {
+    position: relative;
+    padding-top: 100%;
+}
+
+aside li:nth-child(3) {
+    position: relative;
+    padding-top: 100%;
+}
+aside li:nth-child(4) {
+    position: relative;
+    margin-top: -10%;
+}
+
+/*These change the width of the left and right columns*/
+#left-col {
+    width:25%;
+    height: 100%;
+    box-shadow: 5px 10px green inset;
+}
 #right-col {
     width: 75%;
 }
+/*changes the colour of the about-me section*/
 #about-me {
-    background: purple;
+    background: var(--backgroundgreen);
+    width:100%;
+    padding-right: 4%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+#about-me h3, h4, p {
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+#about-me h3{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+    color: #5F1A0F;
+}
+
+#about-me h4{
+    font-family: 'Poor Story', cursive;
+    font-size: 22px;
+}
+
+/*changes the colour of the work section*/
+#work {
+    background:var(--headercolor);
     width:100%;
 }
 
-#work {
-    background:blue;
-    width:100%;
+.work-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background:var(--headercolor);
+}
+
+.work-container a{
+    padding-bottom: 3%;
+    background:var(--headercolor);
+}
+
+.work-container a img {
+    border-radius: 15px;
+    background:var(--headercolor);
 }
 
 #resume {
     background: grey;
     width:100%;
+    display: flex;
+}
+/*changes the colour of the resume area of the right column*/
+#resume div {
+    background: var(--backgroundgreen);
+}
+.resume-left-column {
+    width:50%;
+}
+.resume-left-column h3,
+.resume-right-column h3{
+    width:50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 22px;
+    color: #5F1A0F;
+}
+.resume-left-column ul,
+.resume-right-column ul{
+    list-style: circle;
+    padding-left: 6%;
+}
+.resume-left-column li,
+.resume-right-column li{
+    padding-bottom: 4%;
+    padding-left: 3%;
+}    
+.resume-right-column {
+    width:50%;
+}
+/*changes the colour of the area of the contact me footer in the right column*/
+#contact-me {
+    display:flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: var(--headercolor);;
+    width: 100%;
+}
+/*hides the heading in the footer*/
+#hidden-heading-footer {
+    display:none;
 }
 
-#contact-me {
-    background: orangered;
+#visible-heading-footer {
+    margin-right: 20%;
+    padding-left: 2%;
+    background: var(--backgroundgreen);
+}
+
+footer {
+    background: var(--backgroundgreen);
+}
+
+footer ul li {
+    float:right;
+    background: var(--headercolor);
+}
+/*hides the headings outside of the footer*/
+.hidden-heading {
+    display: none;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 70px;
+    text-decoration: underline;
+    color: #5F1A0F;
 }
