@@ -44,8 +44,9 @@ header h1 {
     float: left;
     color: var(--textred);
     font-family: 'Montserrat Subrayada', sans-serif;
-    background-image: linear-gradient(90deg, #CAC890, #C5DCA5);
+    background-image: linear-gradient(90deg, #DAFDAC, #C5DCA5);
     transition: all 0.5s ease-in-out;
+    border-radius: 10px 0px 0px 10px;
 }
 
 header h1:hover {
@@ -74,7 +75,6 @@ aside {
     height:100%;
     background:var(--backgroundgreen);
     display: flex;
-    box-shadow: -5px 0px 5px green inset;
 }
 aside ul {
     display: flex;
@@ -101,15 +101,12 @@ aside li:nth-child(1) {
     padding-top: 35%;
 }
 
-aside li:nth-child(2) {
-    position: relative;
-    padding-top: 100%;
-}
-
+aside li:nth-child(2),
 aside li:nth-child(3) {
     position: relative;
     padding-top: 100%;
 }
+
 aside li:nth-child(4) {
     position: relative;
     margin-top: -10%;
@@ -119,7 +116,6 @@ aside li:nth-child(4) {
 #left-col {
     width:25%;
     height: 100%;
-    box-shadow: 5px 10px green inset;
 }
 #right-col {
     width: 75%;
@@ -149,6 +145,11 @@ aside li:nth-child(4) {
     font-size: 22px;
 }
 
+#about-me p {
+    font-family: serif;
+    font-size: 18px;
+}
+
 /*changes the colour of the work section*/
 #work {
     background:var(--headercolor);
@@ -160,22 +161,42 @@ aside li:nth-child(4) {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 5%;
-    padding-bottom: 5%;
     background:var(--headercolor);
 }
 
 .work-container a{
-    padding-bottom: 3%;
     background:var(--headercolor);
+    border-radius: 15px;
+    margin-bottom: 3%;
 }
 
 .work-container a img {
     border-radius: 15px;
     background:var(--headercolor);
 }
+#rollin-card::before,
+#fox-card::before,
+#bike-card::before,
+#clone-card::before,
+#snippet-card::before,
+#birdy-card::before{
+    position: absolute;
+    content: attr(caption);
+    color: white;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 22px;
+}
+#rollin-card:hover,
+#fox-card:hover,
+#bike-card:hover,
+#clone-card:hover,
+#snippet-card:hover,
+#birdy-card:hover {
+    box-shadow: inset 0px 0px 30px greenyellow;
+    box-shadow: 0px 0px 30px rgb(0, 128, 21);
+}
 
 #resume {
-    background: grey;
     width:100%;
     display: flex;
 }
@@ -203,6 +224,7 @@ aside li:nth-child(4) {
 }
 .resume-left-column li,
 .resume-right-column li{
+    font-family: serif;
     padding-bottom: 4%;
     padding-left: 3%;
 }    
@@ -214,7 +236,7 @@ aside li:nth-child(4) {
     display:flex;
     padding-top: 3%;
     padding-bottom: 3%;
-    background: var(--headercolor);;
+    background: var(--headercolor);
     width: 100%;
 }
 /*hides the heading in the footer*/
@@ -232,9 +254,18 @@ footer {
     background: var(--backgroundgreen);
 }
 
-footer ul li {
-    float:right;
+footer ul {
+    display: inline;
+    width:100%;
+    padding-left: 5px;
     background: var(--headercolor);
+}
+footer ul li {
+    float: right;
+    padding-right: 10%;
+    background: var(--headercolor);
+    font-family: 'Poor Story', cursive;
+    font-size: 28px;
 }
 /*hides the headings outside of the footer*/
 .hidden-heading {
