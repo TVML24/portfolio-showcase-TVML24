@@ -19,11 +19,11 @@ header{
 .header-background{
     background: var(--headercolor);
 }
-
+/*allows the extra long image to disappear later on*/
 .disappear {
     background: var(--headercolor);
 }
-
+/*These control the list items in the header/nav */
 nav {
     display: inline;
 }
@@ -52,7 +52,7 @@ nav a {
     transition: all 0.5s ease-in-out;
     padding: 10px;
 }
-
+/*hover effect for the items in the nav*/
 nav a:hover {
     box-shadow: inset 5px 5px 18px 3px #7F88D5;
     border-radius: 5px;
@@ -68,7 +68,7 @@ header h1 {
     transition: all 0.5s ease-in-out;
     border-radius: 10px 0px 0px 10px;
 }
-
+/*hover effect on the name in the header*/
 header h1:hover {
     box-shadow: inset 0px 0px 30px greenyellow;
     box-shadow: 0px 0px 30px rgb(0, 128, 21);
@@ -89,7 +89,7 @@ main {
     width: 100%;
     background-image: url("./images/trees-hero.jpg")
 }
-
+/*controls the image of me in the hero*/
 #hero-div img {
     height: 350px;
     width: auto;
@@ -121,7 +121,7 @@ aside li {
     position: relative;
     width:100%;
 }
-
+/* these place the spacing between the list elements within the aside*/
 aside li:nth-child(1) {
     position: absolute;
     top: 10%;
@@ -198,7 +198,7 @@ aside li:nth-child(4) {
     background:var(--headercolor);
     width:100%;
 }
-
+/*container for the cards in the work section*/
 .work-container{
     display: flex;
     flex-wrap: wrap;
@@ -209,35 +209,35 @@ aside li:nth-child(4) {
     padding-left: 3%;
     background:var(--headercolor);
 }
-
 .work-container a{
     background:var(--headercolor);
     border-radius: 15px;
     margin-bottom: 3%;
 }
-
 .work-container a img {
     border-radius: 15px;
     background:var(--headercolor);
 }
+/*sets the sizing for the extra long image(part of technical acceptance criteria)*/
 .work-card-xlong img {
     width: 1000px;
     height:250px;
 }
+/*sets the sizing for the long image*/
 .work-card-long img {
     width: 700px;
     height:220px;
 }
-
+/*sets the sizing for the short image*/
 .work-card-short img {
     width: 400px;
     height:220px;
 }
-
+/*This is where the extra long image will reappear when activated by a media query*/
 .appear {
     display: none;
 }
-
+/*Adds the titles for the various work cards*/
 .appear::before,
 .work-card-xlong::before,
 .work-card-long::before,
@@ -248,6 +248,7 @@ aside li:nth-child(4) {
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 22px;
 }
+/*adds the hover effects on the work cards*/
 .appear:hover,
 .work-card-xlong:hover,
 .work-card-long:hover,
@@ -264,7 +265,11 @@ aside li:nth-child(4) {
 #resume div {
     background: var(--backgroundgreen);
 }
+/*sets the sizing of the two columns in the resume section*/
 .resume-left-column {
+    width:50%;
+}
+.resume-right-column {
     width:50%;
 }
 .resume-left-column h3,
@@ -288,10 +293,6 @@ aside li:nth-child(4) {
     padding-bottom: 4%;
     padding-left: 3%;
 }    
-.resume-right-column {
-    width:50%;
-}
-
 /*changes the colour of the area of the contact me footer in the right column*/
 #contact-me {
     display:flex;
@@ -300,19 +301,11 @@ aside li:nth-child(4) {
     background: var(--headercolor);
     width: 100%;
 }
-/*hides the heading in the footer*/
-
-#visible-heading-footer {
-    margin-right: 20%;
-    padding-left: 2%;
-    background: var(--backgroundgreen);
-}
-
 footer {
     background: var(--backgroundgreen);
     width: 100%;
 }
-
+/*styles the layout and links in the footer*/
 footer ul {
     display: inline;
     width:100%;
@@ -326,14 +319,12 @@ footer ul li {
     font-family: 'Poor Story', cursive;
     font-size: 28px;
 }
-
 footer a {
     text-decoration: none;
     color: #990F48;
     background: var(--headercolor);
 }
-
-/*hides the headings outside of the footer*/
+/*hides the headings until activated by media query and styles them*/
 .hidden-heading {
     display: none;
     font-family: 'Cinzel Decorative', cursive;
