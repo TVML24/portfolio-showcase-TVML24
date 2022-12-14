@@ -89,6 +89,12 @@ main {
     width: 100%;
     background-image: url("./images/trees-hero.jpg")
 }
+
+#hero-div img {
+    height: 350px;
+    width: auto;
+}
+
 aside {
     position: relative;
     width:100%;
@@ -197,7 +203,10 @@ aside li:nth-child(4) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     padding-top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
     background:var(--headercolor);
 }
 
@@ -211,7 +220,10 @@ aside li:nth-child(4) {
     border-radius: 15px;
     background:var(--headercolor);
 }
-
+.work-card-xlong img {
+    width: 1000px;
+    height:250px;
+}
 .work-card-long img {
     width: 700px;
     height:220px;
@@ -222,6 +234,12 @@ aside li:nth-child(4) {
     height:220px;
 }
 
+.appear {
+    display: none;
+}
+
+.appear::before,
+.work-card-xlong::before,
 .work-card-long::before,
 .work-card-short::before{
     position: absolute;
@@ -230,6 +248,8 @@ aside li:nth-child(4) {
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 22px;
 }
+.appear:hover,
+.work-card-xlong:hover,
 .work-card-long:hover,
 .work-card-short:hover{
     box-shadow: inset 0px 0px 30px white;
@@ -271,6 +291,7 @@ aside li:nth-child(4) {
 .resume-right-column {
     width:50%;
 }
+
 /*changes the colour of the area of the contact me footer in the right column*/
 #contact-me {
     display:flex;

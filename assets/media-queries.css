@@ -1,9 +1,37 @@
+@media screen and (max-width: 2200px) {
+    aside li:nth-child(3) {
+        bottom: 3%;
+    }
+    aside li:nth-child(4) {
+        bottom: -10%;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    aside li:nth-child(3) {
+        bottom: 3%;
+    }
+    aside li:nth-child(4) {
+        bottom: -10%;
+    }
+}
 @media screen and (max-width: 1855px) {
     footer ul li {
         font-size: 22px;
     }
+    aside li:nth-child(3) {
+        bottom: 5%;
+    }
+    aside li:nth-child(4) {
+        bottom: -7%;
+    }
 }
 
+@media screen and (min-width: 1513px) {
+    #smaller {
+        font-size: 40px;
+    }
+}
 @media screen and (max-width: 1558px) {
     nav ul {
         margin-right: 5%;
@@ -15,8 +43,15 @@
     nav a {
         padding: 5px;
     }
+    aside li:nth-child(3) {
+        bottom: 5%;
+    }
+    aside li:nth-child(4) {
+        bottom: -5%;
+    }
 }
-@media screen and (max-width: 1466px) {
+
+@media screen and (max-width: 1560px) {
     aside ul {
         font-size: 45px;
     }
@@ -29,9 +64,18 @@
     aside li:nth-child(4) {
         bottom: -20%;
     }
-
     footer ul li {
         font-size: 18px;
+    }
+    .work-card-xlong {
+        display: none;
+    }
+    .appear {
+        display: flex;
+    }
+    .appear img {
+        height: 220px;
+        width: 400px;
     }
 }
 @media screen and (max-width: 1196px) {
@@ -44,9 +88,15 @@
     footer ul li {
         font-size: 14px;
     }
+    aside li:nth-child(3) {
+        bottom:-5%;
+    }
+    aside li:nth-child(4) {
+        bottom: -18%;
+    }
 }
 
-@media screen and (max-width: 1066px) {
+@media screen and (max-width: 1135px) {
     header h1 {
         font-size: 25px;
     }
@@ -60,12 +110,11 @@
         font-size: 30px;
     }
     aside li:nth-child(3) {
-        bottom:-20%;
+        bottom:-30%;
     }
     aside li:nth-child(4) {
-        bottom: -32%;
+        bottom: -45%;
     }
-
 }
 @media screen and (max-width: 962px) {
     aside ul {
@@ -175,6 +224,10 @@
         width: 350px;
         height:170px;
     }
+    .appear img {
+        width: 350px;
+        height:170px;
+    }
 }
 
 @media screen and (max-width: 336px) {
@@ -186,6 +239,10 @@
         height:120px;
     }
     .work-card-short img {
+        width: 300px;
+        height:120px;
+    }
+    .appear img {
         width: 300px;
         height:120px;
     }
