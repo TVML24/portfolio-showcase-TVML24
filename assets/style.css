@@ -37,6 +37,18 @@ nav li {
     color: var(--textred);
     background: var(--headercolor);
 }
+nav a {
+    text-decoration: none;
+    color: var(--headingred);
+    background:var(--headercolor);
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+
+nav a:hover {
+    box-shadow: inset 5px 5px 18px 3px #7F88D5;
+    border-radius: 5px;
+}
 header h1 {
     font-size: 34px;
     margin-top: 1%;
@@ -97,19 +109,36 @@ aside li {
 }
 
 aside li:nth-child(1) {
-    position: relative;
-    padding-top: 35%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 2;
+    text-decoration: underline;
 }
 
-aside li:nth-child(2),
+aside li:nth-child(2){
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    z-index: 2;
+    text-decoration: underline;
+}
+
 aside li:nth-child(3) {
-    position: relative;
-    padding-top: 100%;
+    position: absolute;
+    bottom:17%;
+    right: 5%;
+    z-index: 2;
+    text-decoration: underline;
 }
 
 aside li:nth-child(4) {
-    position: relative;
-    margin-top: -10%;
+    position: absolute;
+    bottom: 2%;
+    margin-right: 5%;
+    width:80%;
+    z-index: 2;
+    text-decoration: underline;
 }
 
 /*These change the width of the left and right columns*/
@@ -174,26 +203,16 @@ aside li:nth-child(4) {
     border-radius: 15px;
     background:var(--headercolor);
 }
-#rollin-card::before,
-#fox-card::before,
-#bike-card::before,
-#clone-card::before,
-#snippet-card::before,
-#birdy-card::before{
+.work-card::before{
     position: absolute;
     content: attr(caption);
     color: white;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 22px;
 }
-#rollin-card:hover,
-#fox-card:hover,
-#bike-card:hover,
-#clone-card:hover,
-#snippet-card:hover,
-#birdy-card:hover {
-    box-shadow: inset 0px 0px 30px greenyellow;
-    box-shadow: 0px 0px 30px rgb(0, 128, 21);
+.work-card:hover{
+    box-shadow: inset 0px 0px 30px white;
+    box-shadow: 0px 0px 30px greenyellow;
 }
 
 #resume {
@@ -267,6 +286,13 @@ footer ul li {
     font-family: 'Poor Story', cursive;
     font-size: 28px;
 }
+
+footer a {
+    text-decoration: none;
+    color: #990F48;
+    background: var(--headercolor);
+}
+
 /*hides the headings outside of the footer*/
 .hidden-heading {
     display: none;
