@@ -16,6 +16,14 @@ header{
     position:sticky;
 }
 
+.header-background{
+    background: var(--headercolor);
+}
+
+.disappear {
+    background: var(--headercolor);
+}
+
 nav {
     display: inline;
 }
@@ -203,14 +211,27 @@ aside li:nth-child(4) {
     border-radius: 15px;
     background:var(--headercolor);
 }
-.work-card::before{
+
+.work-card-long img {
+    width: 700px;
+    height:220px;
+}
+
+.work-card-short img {
+    width: 400px;
+    height:220px;
+}
+
+.work-card-long::before,
+.work-card-short::before{
     position: absolute;
     content: attr(caption);
     color: white;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 22px;
 }
-.work-card:hover{
+.work-card-long:hover,
+.work-card-short:hover{
     box-shadow: inset 0px 0px 30px white;
     box-shadow: 0px 0px 30px greenyellow;
 }
@@ -259,9 +280,6 @@ aside li:nth-child(4) {
     width: 100%;
 }
 /*hides the heading in the footer*/
-#hidden-heading-footer {
-    display:none;
-}
 
 #visible-heading-footer {
     margin-right: 20%;
@@ -271,6 +289,7 @@ aside li:nth-child(4) {
 
 footer {
     background: var(--backgroundgreen);
+    width: 100%;
 }
 
 footer ul {

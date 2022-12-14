@@ -1,0 +1,192 @@
+@media screen and (max-width: 1855px) {
+    footer ul li {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1558px) {
+    nav ul {
+        margin-right: 5%;
+    }
+
+    nav li {
+        padding-left: 5%;
+    }
+    nav a {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 1466px) {
+    aside ul {
+        font-size: 45px;
+    }
+    aside li:nth-child(2){
+        top: 60%;
+    }
+    aside li:nth-child(3) {
+        bottom:-5%;
+    }
+    aside li:nth-child(4) {
+        bottom: -20%;
+    }
+
+    footer ul li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1196px) {
+    nav ul {
+        margin-right: 0%;
+    }
+    #about-me h3 {
+        font-size: 40px;
+    }
+    footer ul li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    header h1 {
+        font-size: 25px;
+    }
+    #hero-div {
+        position: relative;
+        height: 350px;
+        width: 100%;
+        background-image: url("./images/trees-hero.jpg")
+    }
+    aside ul {
+        font-size: 30px;
+    }
+    aside li:nth-child(3) {
+        bottom:-20%;
+    }
+    aside li:nth-child(4) {
+        bottom: -32%;
+    }
+
+}
+@media screen and (max-width: 962px) {
+    aside ul {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 934px) {
+    aside {
+        display: none;
+    }
+    #left-col {
+        width:0%;
+    }
+    #right-col {
+        width: 100%;
+    }
+    .resume-left-column h3,
+    .resume-right-column h3{
+        padding-top: 12%;
+    }
+    .hidden-heading {
+        display: block;
+        margin-left:3%;
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 25px;
+        text-decoration: underline;
+        color: #5F1A0F;
+    }
+    footer ul {
+        display: block;
+        width:100%;
+        padding-left: 5px;
+        background: var(--headercolor);
+    }
+    footer ul li {
+        float: left;
+        padding-left: 5%;
+        background: var(--headercolor);
+        font-family: 'Poor Story', cursive;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 755px) {
+    #hero-div {
+        display: none;
+    }
+
+    header {
+        padding-bottom: 25%;
+    }
+    nav ul{
+        display: block;
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+    }
+    nav a {
+        margin-top: 10px;
+    }
+    .work-card-long img {
+        width: 400px;
+        height:220px;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    #about-me h3 {
+        font-size: 30px;
+    }
+    footer ul li {
+        padding-right: 0px;
+    }
+    #resume {
+        flex-direction: column;
+    }
+    .resume-left-column,
+    .resume-right-column {
+        width: 100%;
+    }
+    .disappear {
+        display: none;
+    }
+    .resume-left-column h3,
+    .resume-right-column h3{
+        padding-top: 5%;
+    }
+    main {
+    flex-direction: column;
+    }
+    header {
+        padding-bottom: 35%;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    header {
+        padding-bottom: 45%;
+    }
+    .work-card-long img {
+        width: 350px;
+        height:170px;
+    }
+    .work-card-short img {
+        width: 350px;
+        height:170px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    header {
+        padding-bottom: 55%;
+    }
+    .work-card-long img {
+        width: 300px;
+        height:120px;
+    }
+    .work-card-short img {
+        width: 300px;
+        height:120px;
+    }
+}
