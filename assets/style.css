@@ -213,11 +213,14 @@ aside li:nth-child(4) {
     background:var(--headercolor);
     border-radius: 15px;
     margin-bottom: 3%;
+    color: blue;
 }
 .work-container a img {
     border-radius: 15px;
     background:var(--headercolor);
 }
+
+
 /*sets the sizing for the extra long image(part of technical acceptance criteria)*/
 .work-card-xlong img {
     width: 1000px;
@@ -255,6 +258,10 @@ aside li:nth-child(4) {
 .work-card-short:hover{
     box-shadow: inset 0px 0px 30px white;
     box-shadow: 0px 0px 30px greenyellow;
+}
+
+.work-card-xlong a {
+    color: blue;
 }
 
 #resume {
